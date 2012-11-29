@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <!-- Basic Page Needs
+ ================================================== -->
+  <meta charset="utf-8" />
+  <title>Font屌</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+  <!-- CSS
+ ================================================== -->
+
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/prettify.css">
+<!--[if IE 7]>
+  <link rel="stylesheet" href="assets/css/font-awesome-ie7.css">
+<![endif]-->
+  <link rel="stylesheet" href="assets/css/fontdiao.css">
+</head>
+<body>
+
+<!--for navigation-->
+<div id="overview"></div>
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <h3><a class="brand" href="#"><i class="icon-flag"></i> Font屌</a></h3>
+      <ul class="nav">
+        <li><a href="#overview">简介</a></li>
+        <li><a href="#icons">图标</a></li>
+        <li><a href="#integration">集成</a></li>
+        <li><a href="#code">代码</a></li>
+        <li><a href="#roadmap">路线</a></li>
+      </ul>
+      <ul class="nav pull-right">
+        <li><a href="mailto:lexrus@gmail.com"><i class="icon-envelope"></i> Lex</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="hero-unit">
+  <div id="iconCarousel" class="carousel slide">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="active item"><div><i class="icon-weibo"></i></div></div>
+      <div class="item"><div><i class="icon-xunlei"></i></div></div>
+      <div class="item"><div><i class="icon-58"></i></div></div>
+      <div class="item"><div><i class="icon-baidu"></i></div></div>
+      <div class="item"><div><i class="icon-cctv"></i></div></div>
+      <div class="item"><div><i class="icon-douban"></i></div></div>
+      <div class="item"><div><i class="icon-kx001"></i></div></div>
+      <div class="item"><div><i class="icon-qzone"></i></div></div>
+      <div class="item"><div><i class="icon-qq"></i></div></div>
+      <div class="item"><div><i class="icon-renren"></i></div></div>
+      <div class="item"><div><i class="icon-taobao"></i></div></div>
+      <div class="item"><div><i class="icon-tenxunweibo"></i></div></div>
+      <div class="item"><div><i class="icon-tmall"></i></div></div>
+      <div class="item"><div><i class="icon-tudou"></i></div></div>
+      <div class="item"><div><i class="icon-v2ex"></i></div></div>
+      <div class="item"><div><i class="icon-wangyi"></i></div></div>
+      <div class="item"><div><i class="icon-yihaodian"></i></div></div>
+      <div class="item"><div><i class="icon-youku"></i></div></div>
+      <div class="item"><div><i class="icon-buluo"></i></div></div>
+      <div class="item"><div><i class="icon-360buy"></i></div></div>
+      <div class="item"><div><i class="icon-51buy"></i></div></div>
+      <div class="item"><div><i class="icon-lianmeng"></i></div></div>
+      <div class="item"><div><i class="icon-alibaba"></i></div></div>
+      <div class="item"><div><i class="icon-alipay"></i></div></div>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#iconCarousel" data-slide="prev">
+      <i class="icon-arrow-left"></i></a>
+    <a class="carousel-control right" href="#iconCarousel" data-slide="next">
+      <i class="icon-arrow-right"></i></a>
+  </div>
+  <div class="hero-content">
+    <h1>Font屌</h1>
+    <p>中文网站前端屌丝码农的逆袭<br/>
+      <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">FontAwesome</a> 非官方中文分支</p>
+    <div class="actions">
+      <a class="btn btn-primary btn-large" href="https://github.com/lexrus/fontdiao/zipball/master">
+        <i class="icon-download"></i>下载 Font屌 v0.0.1</a>
+      <a class="btn btn-large btn-github" href="https://github.com/lexrus/fontdiao" target="_blank">
+        <i class="icon-github"></i>访问 GitHub</a>
+    </div>
+  </div>
+</div>
+
+<section id="social-buttons">
+  <div class="row">
+    <span class="watch">
+      <a class="btn" href="https://github.com/lexrus/fontdiao" target="_blank"><i class="icon-github"></i> Watch</a>
+      <a id="watchers" class="count btn" href="https://github.com/lexrus/fontdiao">1+</a>
+    </span>
+    <span class="fork">
+      <a class="btn" href="https://github.com/lexrus/fontdiao" target="_blank"><i class="icon-github"></i> Fork</a>
+      <a id="forks" class="count btn" href="#">1+</a>
+    </span>
+    <span class="follow">
+      <a class="btn" href="http://twitter.com/lexrus/" target="_blank"><i class="icon-twitter"></i> Follow @lexrus</a>
+      <span class="arrow-right"></span><span id="followers" class="count btn">1+</span>
+    </span>
+    <span class="follor">
+      <a class="btn" href="http://weibo.com/lexrus/" target="_blank"><i class="icon-weibo"></i> 关注 @汤圣罡</a>
+    </span>
+  </div>
+  <div class="row">
+    <p class="container">
+      <!-- JiaThis Button BEGIN -->
+      <div class="alert alert-success jiathis_style span7 offset2">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <div class="pull-right">{#Lex:这条位图下一版改成矢量图#}</div>
+        <a class="jiathis_button_qzone"></a>
+        <a class="jiathis_button_tsina"></a>
+        <a class="jiathis_button_tqq"></a>
+        <a class="jiathis_button_renren"></a>
+        <a class="jiathis_button_kaixin001"></a>
+        <a class="jiathis_button_fav"></a>
+        <a class="jiathis_button_taobao"></a>
+        <a class="jiathis_button_douban"></a>
+        <a class="jiathis_button_google"></a>
+        <a class="jiathis_button_fb"></a>
+        <a class="jiathis_button_googleplus"></a>
+        <a class="jiathis_button_twitter"></a>
+        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+        <a class="jiathis_counter_style"></a>
+      </div>
+      <!-- JiaThis Button END -->
+    </p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="row">
+    <div class="span4">
+      <h3><i class="icon-bullhorn icon-large"></i> <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">FontAwesome</a> 的中文分支</h3>
+      可与 FontAwesome 同时使用，对中文网站更加友好。
+    </div>
+    <div class="span4">
+      <h3><i class="icon-eye-open icon-large"></i> 完美支持 Retina 屏幕</h3>
+      没有 @2x 的图片，不需要 JavaScript，因为使用了矢量字体。另外次像素平滑技术将使你的图标更加清晰锐利。
+    </div>
+    <div class="span4">
+      <h3><i class="icon-taobao icon-large"></i> 广泛的应用场合</h3>
+      想要在某个淘宝链接前嵌入淘宝的图标？但是不同颜色或大小的文字需要好多图片，Font屌 是更好的选择。
+    </div>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <h3><i class="icon-flag icon-large"></i> 一个字体包含 20 多个图标</h3>
+      客户端浏览器只下载一个字体，就能拥有 20 多个常用网站的图标。
+    </div>
+    <div class="span4">
+      <h3><i class="icon-gift icon-large"></i> 可用于商业应用</h3>
+      Font屌 的字体和样式表可用于商业应用，且完全免费。
+    </div>
+    <div class="span4">
+      <h3><i class="icon-ok icon-large"></i> 支持 IE7</h3>
+
+      和 <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">FontAwesome</a> 一样，Font屌 v0.0.1 支持 IE7。
+    </div>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <h3><i class="icon-thumbs-up icon-large"></i> 为 Twitter Bootstrap 而生</h3>
+      为了解放网站前端屌丝码农，我们必须支持
+       <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap 2.0</a>.
+    </div>
+    <div class="span4">
+      <h3><i class="icon-pencil icon-large"></i> CSS 控制</h3>
+      你可以非常方便地控制图标的颜色、大小、阴影等所有可以用 CSS 控制的属性。
+    </div>
+    <div class="span4">
+      <h3><i class="icon-resize-full icon-large"></i> 无限缩放</h3>
+      使用矢量图形的好处是无论怎样缩放它都能得到完美的视觉效果。
+    </div>
+  </div>
+</section>
+
+
+<section id="icons" class="row">
+  <div class="span12">
+    <h1>图标</h1>
+    <p>我收集了一些中文网站经常需要用的图标，加入到 Font屌 中。如果你希望加入更多图标，请在此项目的 GitHub 仓库中创建 issues，或者直接将图标 email 给我，可以发位图，但最好是矢量图。</p>
+  </div>
+
+  <div class="span3">
+    <ul class="the-icons">
+      <li><i class="icon-cctv"></i> icon-cctv</li>
+      <li><i class="icon-tudou"></i> icon-tudou</li>
+      <li><i class="icon-youku"></i> icon-youku</li>
+      <li><i class="icon-baidu"></i> icon-baidu</li>
+      <li><i class="icon-alibaba"></i> icon-alibaba</li>
+      <li><i class="icon-alipay"></i> icon-alipay</li>
+    </ul>
+  </div>
+
+  <div class="span3">
+    <ul class="the-icons">
+      <li><i class="icon-weibo"></i> icon-weibo</li>
+      <li><i class="icon-taobao"></i> icon-taobao</li>
+      <li><i class="icon-tenxunweibo"></i> icon-tenxunweibo</li>
+      <li><i class="icon-tmall"></i> icon-tmall</li>
+      <li><i class="icon-v2ex"></i> icon-v2ex</li>
+      <li><i class="icon-wangyi"></i> icon-wangyi</li>
+    </ul>
+  </div>
+
+  <div class="span3">
+    <ul class="the-icons">
+      <li><i class="icon-douban"></i> icon-douban</li>
+      <li><i class="icon-kx001"></i> icon-kx001</li>
+      <li><i class="icon-qzone"></i> icon-qzone</li>
+      <li><i class="icon-qq"></i> icon-qq</li>
+      <li><i class="icon-renren"></i> icon-renren</li>
+      <li><i class="icon-ctrip"></i> icon-ctrip</li>
+    </ul>
+  </div>
+
+  <div class="span3">
+    <ul class="the-icons">
+      <li><i class="icon-weibo"></i> icon-weibo</li>
+      <li><i class="icon-xunlei"></i> icon-xunlei</li>
+      <li><i class="icon-yihaodian"></i> icon-yihaodian</li>
+      <li><i class="icon-buluo"></i> icon-buluo</li>
+      <li><i class="icon-lianmeng"></i> icon-lianmeng</li>
+      <li><i class="icon-yamaxun"></i> icon-yamaxun</li>
+    </ul>
+  </div>
+</section>
+
+<section id="integration">
+  <h1>集成</h1>
+  <p>Font屌 与 Twitter Bootstrap 同时使用是一件很简单的事, 单独使用 Font屌 也很方便。</p>
+  <div class="row">
+    <div class="span3">
+      <h3>与 FontAwesome 一起使用</h3>
+      <p>当你使用 Twitter Bootstrap 和 FontAwesome 时使用此方法。</p>
+    </div>
+    <div class="span9">
+      <ol>
+        <li><a href="http://fortawesome.github.com/Font-Awesome/#integration" target="_blank">先在 Bootstrap 中集成 FontAwesome</a>。</li>
+        <li>将 Font屌 的 font 目录复制到你的项目中。</li>
+        <li>复制 fontdiao.css 到你的项目中。</li>
+        <li>打开项目中的 fontdiao.css 确定字体文件的 url 指向正确的位置。</li>
+        <li>
+          在你的 html <code>&lt;head&gt;</code> 标签中，引用 fontdiao.css。
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" href="../css/bootstrap.css"&gt;
+&lt;link rel="stylesheet" href="../css/font-awesome.css"&gt;
+&lt;link rel="stylesheet" href="../css/fontdiao.css"&gt;
+</pre>
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+      <h3>不和 Bootstrap 一起用？</h3>
+      <p>Font屌 在没有 Twitter Bootstrap 的情况下同样可以用。</p>
+    </div>
+    <div class="span9">
+      <ol>
+        <li>将 Font屌 的 font 目录复制到你的项目中。</li>
+        <li>复制 fontdiao.css 到你的项目中。</li>
+        <li>打开项目中的 fontdiao.css 确定字体文件的 url 指向正确的位置。</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="code">
+<h1>代码</h1>
+<div class="row">
+  <div class="span3">
+    <h3>同一行中的图标</h3>
+    <p>使用 <code>&lt;i&gt;</code> 标签在任何位置插入 Font屌 图标。</p>
+  </div>
+  <div class="span9">
+    <div class="well">
+      <div style="font-size: 24px;">
+        <i class="icon-buluo"></i> icon-buluo
+      </div>
+    </div>
+<pre class="prettyprint linenums">
+&lt;div style="font-size: 24px;"&gt;
+  &lt;i class="icon-buluo"&gt;&lt;/i&gt; icon-buluo
+&lt;/div&gt;
+</pre>
+    <div class="alert alert-info"><i class="icon-info-sign"></i> 图标的样式将通过 CSS 的 :before 选择器输出。</div>
+    <p>通过使用 <code>icon-large</code> 类改变图标大小。这将使图标在其容器内变大 33%。</p>
+    <div class="well">
+      <div style="font-size: 24px;">
+        <i class="icon-buluo icon-large"></i> icon-buluo
+      </div>
+    </div>
+<pre class="prettyprint linenums">
+&lt;div style="font-size: 24px;"&gt;
+  &lt;i class="icon-buluo icon-large"&gt;&lt;/i&gt; icon-buluo
+&lt;/div&gt;
+</pre>
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <h3>按钮</h3>
+    <p>
+    <p>
+      <a class="btn" href="#">
+        <i class="icon-tudou"></i> 土豆网</a>
+      <a class="btn btn-success" href="#">
+        <i class="icon-douban icon-large"></i> 豆瓣</a>
+    </p>
+    <p>
+      <a class="btn btn-large btn-primary" href="#">
+        <i class="icon-tmall"></i> 天猫</a>
+      <a class="btn btn-danger" href="#">
+        <i class="icon-baidu icon-large"></i> 百度</a>
+    </p>
+    <p>
+      <a class="btn" href="#">
+        <i class="icon-weibo"></i> 微博</a>
+      <a class="btn btn-info" href="#">
+        <i class="icon-qq"></i> QQ</a>
+    </p>
+    </p>
+  </div>
+  <div class="span9">
+    <p>Font屌 的图标能使用在按钮中。</p>
+<pre class="prettyprint linenums">
+&lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;icon-tudou&quot;&gt;&lt;/i&gt; &#x571F;&#x8C46;&#x7F51;&lt;/a&gt;
+&lt;a class=&quot;btn btn-success&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;icon-douban icon-large&quot;&gt;&lt;/i&gt; &#x8C46;&#x74E3;&lt;/a&gt;
+&lt;a class=&quot;btn btn-large btn-primary&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;icon-tmall&quot;&gt;&lt;/i&gt; &#x5929;&#x732B;&lt;/a&gt;
+&lt;a class=&quot;btn btn-danger&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;icon-baidu icon-large&quot;&gt;&lt;/i&gt; &#x767E;&#x5EA6;&lt;/a&gt;
+&lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;icon-weibo&quot;&gt;&lt;/i&gt; &#x5FAE;&#x535A;&lt;/a&gt;
+&lt;a class=&quot;btn btn-info&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;icon-qq&quot;&gt;&lt;/i&gt; QQ&lt;/a&gt;
+</pre>
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <h3>按钮组</h3>
+    <p>
+    <div class="btn-group">
+      <a class="btn" href="#"><i class="icon-tudou"></i></a>
+      <a class="btn" href="#"><i class="icon-baidu"></i></a>
+      <a class="btn" href="#"><i class="icon-weibo"></i></a>
+      <a class="btn" href="#"><i class="icon-tenxunweibo"></i></a>
+    </div>
+    </p>
+  </div>
+  <div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-tudou&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-baidu&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-weibo&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+  &lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-tenxunweibo&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <h3>下拉框</h3>
+    <p>
+    <div class="btn-group">
+      <a class="btn btn-primary" href="#"><i class="icon-58"></i> 一个神奇的网站</a>
+      <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+        <span class="icon-caret-down"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#"><i class="icon-renren"></i> 人人网</a></li>
+        <li><a href="#"><i class="icon-kx001"></i> 开心网</a></li>
+        <li><a href="#"><i class="icon-zhenai"></i> 珍爱网</a></li>
+        <li class="divider"></li>
+        <li><a href="#"><i class="i"></i> 管理</a></li>
+      </ul>
+    </div>
+  </div>
+  </p>
+  <div class="span9">
+<pre class="prettyprint linenums">
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;icon-58&quot;&gt;&lt;/i&gt; &#x4E00;&#x4E2A;&#x795E;&#x5947;&#x7684;&#x7F51;&#x7AD9;&lt;/a&gt;
+  &lt;a class=&quot;btn btn-primary dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;
+    &lt;span class=&quot;icon-caret-down&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-renren&quot;&gt;&lt;/i&gt; &#x4EBA;&#x4EBA;&#x7F51;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-kx001&quot;&gt;&lt;/i&gt; &#x5F00;&#x5FC3;&#x7F51;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-zhenai&quot;&gt;&lt;/i&gt; &#x73CD;&#x7231;&#x7F51;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;i&quot;&gt;&lt;/i&gt; &#x7BA1;&#x7406;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    <div class="alert alert-info"><i class="icon-info-sign"></i> 别忘了添加相关的 JavaScript，不然下拉按钮点不开的。</div>
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <h3>列表</h3>
+    <p>
+    <ul class="icons">
+      <li><i class="icon-qzone"></i> QQ空间</li>
+      <li><i class="icon-51buy"></i> 易迅</li>
+      <li><i class="icon-yihaodian"></i> 1号店</li>
+      <li><i class="icon-wangyi"></i> 网易</li>
+    </ul>
+    </p>
+  </div>
+  <div class="span9">
+    <p>简单得不能再简单了吧。</p>
+<pre class="prettyprint linenums">
+&lt;ul class=&quot;icons&quot;&gt;
+  &lt;li&gt;&lt;i class=&quot;icon-qzone&quot;&gt;&lt;/i&gt; QQ&#x7A7A;&#x95F4;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon-51buy&quot;&gt;&lt;/i&gt; &#x6613;&#x8FC5;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon-yihaodian&quot;&gt;&lt;/i&gt; 1&#x53F7;&#x5E97;&lt;/li&gt;
+  &lt;li&gt;&lt;i class=&quot;icon-wangyi&quot;&gt;&lt;/i&gt; &#x7F51;&#x6613;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <h3>导航</h3>
+    <div class="well" style="padding: 8px 0;">
+      <ul class="nav nav-list">
+        <li class="active"><a href="#"><i class="icon-yihaodian"></i> 1号店</a></li>
+        <li><a href="#"><i class="icon-wangyi"></i> 网易</a></li>
+        <li><a href="#"><i class="icon-51buy"></i> 易迅</a></li>
+        <li><a href="#"><i class="icon-qzone"></i> QQ空间</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="span9">
+    <p>在导航中使用 Font屌 提供更有效的视觉差异。</p>
+<pre class="prettyprint linenums">
+&lt;ul class=&quot;nav nav-list&quot;&gt;
+  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-yihaodian&quot;&gt;&lt;/i&gt; 1&#x53F7;&#x5E97;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-wangyi&quot;&gt;&lt;/i&gt; &#x7F51;&#x6613;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-51buy&quot;&gt;&lt;/i&gt; &#x6613;&#x8FC5;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-qzone&quot;&gt;&lt;/i&gt; QQ&#x7A7A;&#x95F4;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+  </div>
+</div>
+<div class="row">
+  <div class="span3">
+    <h3>支持输入框</h3>
+    <p>
+    <form>
+      <div class="input-prepend">
+        <span class="add-on"><i class="icon-douban"></i></span>
+        <input class="span2" type="text" placeholder="豆瓣帐号">
+      </div>
+      <div class="input-prepend">
+        <span class="add-on"><i class="icon-weibo"></i></span>
+        <input class="span2" type="text" placeholder="微博帐号">
+      </div>
+    </form>
+    </p>
+  </div>
+  <div class="span9">
+<pre class="prettyprint linenums">
+&lt;form&gt;
+  &lt;div class=&quot;input-prepend&quot;&gt;
+    &lt;span class=&quot;add-on&quot;&gt;&lt;i class=&quot;icon-douban&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;input class=&quot;span2&quot; type=&quot;text&quot; placeholder=&quot;&#x8C46;&#x74E3;&#x5E10;&#x53F7;&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;input-prepend&quot;&gt;
+    &lt;span class=&quot;add-on&quot;&gt;&lt;i class=&quot;icon-weibo&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;input class=&quot;span2&quot; type=&quot;text&quot; placeholder=&quot;&#x5FAE;&#x535A;&#x5E10;&#x53F7;&quot;&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+  </div>
+</div>
+</section>
+
+<section id="roadmap">
+  <h1>路线</h1>
+  <p>下面是未来的更新路线。</p>
+  <ul class="icons">
+    <li><i class="icon-plus"></i> 更多的图标，如果有要求请移步 <a href="https://github.com/lexrus/fontdiao/issues" target="_blank">新建 issue</a>。</li>
+    <li><i class="icon-plus"></i> 独立的上传网站，可以自动处理位图和矢量图。</li>
+    <li><i class="icon-plus"></i> 更明确的版权细则、反对使用方法。</li>
+  </ul>
+</section>
+
+<footer>
+  <div class="row">
+    <div class="span4">
+      <h2>联系</h2>
+      <ul class="icons">
+        <li><i class="icon-envelope"></i> Email: <a href="mailto:lexrus@gmail.com">Lex Tang</a></li>
+        <li><i class="icon-twitter"></i> Twitter: <a href="http://twitter.com/lexrus/" target="_blank">@lexrus</a></li>
+        <li><i class="icon-wrench"></i> Web: <a href="http://lextang.com" target="_blank">LexTang.com</a></li>
+      </ul>
+    </div>
+    <div class="span8">
+      <h2>License</h2>
+      The Font屌 webfont, CSS, and LESS files are licensed under
+      <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+      A mention of <code>Font屌 - http://lexrus.github.com/fontdiao</code> in human-readable source code
+      is considered acceptable attribution (most common on the web). If human readable source code is not available to
+      the end user, a mention in an 'About' or 'Credits' screen is considered acceptable (most common in desktop or
+      mobile software).
+    </div>
+  </div>
+  <div>
+    <h2>鸣谢</h2>
+    鸣谢 <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">FontAwesome</a> 和
+    <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> 提供好用的 CSS、网页字体，鸣谢 <a href="http://fontcustom.com/" target="_blank">Font Custom</a> 提供字体生成工具。
+  </div>
+</footer>
+
+
+</div>
+
+<script type="text/template" id="modal-template">
+  <div class="modal hide fade in">
+    <div class="modal-header">
+      <a class="close" data-dismiss="modal"><i class="icon-remove"></i></a>
+      <h3><%= iconName %></h3>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="span3 icon6">
+          <div class="thumbnail">
+            <div><i class="<%= iconName %>"></i></div>
+            340px
+          </div>
+        </div>
+        <div class="span3 icon5">
+          <div class="thumbnail">
+            <div><i class="<%= iconName %>"></i></div>
+            180px
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span2 icon4">
+          <div class="thumbnail">
+            <div><i class="<%= iconName %>"></i></div>
+            100px
+          </div>
+        </div>
+        <div class="span2 icon3">
+          <div class="thumbnail">
+            <div><i class="<%= iconName %>"></i></div>
+            50px
+          </div>
+        </div>
+        <div class="span1 icon2">
+          <div class="thumbnail">
+            <div><i class="<%= iconName %>"></i></div>
+            20px
+          </div>
+        </div>
+        <div class="span1 icon1">
+          <div class="thumbnail">
+            <div><i class="<%= iconName %>"></i></div>
+            12 px
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script src="assets/js/jquery-1.7.1.min.js"></script>
+<script src="assets/js/underscore.min.js"></script>
+<script src="assets/js/backbone.min.js"></script>
+<script src="assets/js/prettify.min.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-transition.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-alert.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-modal.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-dropdown.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-scrollspy.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-tab.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-tooltip.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-popover.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-button.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-collapse.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-carousel.js"></script>
+<script src="assets/js/tw-bs-201/bootstrap-typeahead.js"></script>
+<script src="assets/js/index/index.js"></script>
+
+<script type="text/javascript" >
+var jiathis_config={
+  url:"http://lexrus.github.com/fontdiao",
+  summary:"中文网站前端屌丝码农的逆袭",
+  title:"Font屌 ##Font屌#",
+  ralateuid:{
+    "tsina":"1747002695"
+  },
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+</body>
+</html>
