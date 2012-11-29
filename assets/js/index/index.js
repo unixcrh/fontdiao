@@ -17,7 +17,7 @@ $(function() {
     }
   });
   $.ajax({
-    url: 'https://api.github.com/repos/lexrus/LTToolKit',
+    url: 'https://api.github.com/repos/lexrus/fontdiao',
     dataType: 'jsonp',
     success: function(data) {
       $('#watchers').html(data.data.watchers);
