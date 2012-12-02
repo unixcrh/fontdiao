@@ -7,21 +7,12 @@ $(function() {
   // make code pretty
   window.prettyPrint && prettyPrint();
 
-  // inject twitter & github counts
-  $.ajax({
-    url: 'http://api.twitter.com/1/users/show.json',
-    data: {screen_name: 'lexrus'},
-    dataType: 'jsonp',
-    success: function(data) {
-      $('#followers').html(data.followers_count);
-    }
-  });
+  // inject github counts
   $.ajax({
     url: 'https://api.github.com/repos/lexrus/fontdiao',
     dataType: 'jsonp',
     success: function(data) {
       $('#watchers').html(data.data.watchers);
-      $('#forks').html(data.data.forks);
     }
   });
 

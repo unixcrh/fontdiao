@@ -4720,19 +4720,19 @@ h6 {
 .the-icons li [class^="icon-"],
 .the-icons li [class*=" icon-"] {
   width: 32px;
-  font-size: 16px;
+  font-size: 26px;
 }
 .the-icons li:hover {
   background-color: #fbf4f4;
 }
 .the-icons li:hover [class^="icon-"],
 .the-icons li:hover [class*=" icon-"] {
-  *font-size: 24px;
+  *font-size: 32px;
   *vertical-align: middle;
 }
 .the-icons li:hover [class^="icon-"]:before,
 .the-icons li:hover [class*=" icon-"]:before {
-  font-size: 24px;
+  font-size: 32px;
   vertical-align: middle;
 }
 #all-icons h3,
